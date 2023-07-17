@@ -30,6 +30,8 @@ import numpy as np
 ```
 
 - 위의 코드를 실행하면 활성화 중인 Colab 공간에 data라는 폴더가 생기는 것을 확인할 수 있음
+<img width="1020" alt="데이터 참조 결과" src="https://github.com/Moon-GD/deep-learning-basics-self-taught/assets/74173976/e3568659-e9df-4cd0-8629-24b8365523bc">
+
 
 <br>
 
