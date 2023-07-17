@@ -29,13 +29,13 @@ import numpy as np
 !git clone 'github link'
 ```
 
-- 위의 코드를 실행하면 활성화 중인 Colab 공간에 data라는 폴더가 생기는 것을 확인할 수 있음
-
 <br>
+
+- 위의 코드를 실행하면 활성화 중인 Colab 공간에 data라는 폴더가 생기는 것을 확인할 수 있음
 
 <img width="1020" alt="데이터 참조 결과" src="https://github.com/Moon-GD/deep-learning-basics-self-taught/assets/74173976/e3568659-e9df-4cd0-8629-24b8365523bc">
 
-
+<br>
 <br>
 
 - data 폴더의 데이터들은 numpy를 활용하여 불러올 수 있음
@@ -44,9 +44,13 @@ import numpy as np
 data_set = np.loadtxt('상대 경로', delimiter=',')  # csv 파일인 경우가 많기에 ,(콤마)로 구분하여 읽도록 설정
 ```
 
+<br>
+
 - 현재 data sample을 살펴보면 아래와 같음
 
-(사진 첨부하기)
+<img width="423" alt="샘플 데이터 확인" src="https://github.com/Moon-GD/deep-learning-basics-self-taught/assets/74173976/0269e3c9-0be5-44b4-9723-43435e95756f">
+
+<br><br>
 
 - 딥러닝 데이터는 크게 attribute, class로 구분 가능
     - attribute (속성) : 결과 값 도출을 위해 사용될 정보
@@ -58,6 +62,8 @@ data_set = np.loadtxt('상대 경로', delimiter=',')  # csv 파일인 경우가
 X = Data_set[:, 0:16]  # 16번째 attribute까지의 데이터 셋
 y = Data_set[:, 16]  # 17번째 attribute의 데이터 셋
 ```
+
+<br>
 
 - 참고로, 여러 개의 속성이 담기는 집합은 대문자로(위의 X처럼), 하나의 원소만이 담기는 집합은 소문자로(위의 y처럼) 표기하는게 관례
 
@@ -71,6 +77,8 @@ model = Sequential()
 model.add(Dense(30, input_dim=16, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 ```
+
+<br>
 
 - 현재로써는 각 code가 무슨 역할을 하는지 하나도 모르겠음... 🤯
 - 다만, model.add()를 수행할 때마다 딥러닝의 층을 쌓는다고만 알아두자
@@ -86,9 +94,11 @@ model.compile(loss=binary_crossentropy, optimizer='adam', metrics=['accuracy'])
 history = model.fit(X, y, epochs=5, batch_size=16)
 ```
 
+<br>
+
 - 이 코드 또한 무슨 역할인지 하나도 모르겠음..
-- 여기서 배울 건! 딥러닝은 3️⃣ 구조 결정 단계에서 생성된 여러 개의 층을 위 아래로 오가며 model 최적화를 진행
-- 이 때, 몇 번 위 아래 이동을 반복할 것인지, 각 이동마다 몇 개의 데이터를 활용하는지 등을 4️⃣ 모델 실행 단계에서 설정한다고 알아두자!
+- 여기서 배울 건! 딥러닝은 **3️⃣ 구조 결정 단계**에서 생성된 여러 개의 층을 위 아래로 오가며 model 최적화를 진행
+- 이 때, 몇 번 위 아래 이동을 반복할 것인지, 각 이동마다 몇 개의 데이터를 활용하는지 등을 **4️⃣ 모델 실행 단계**에서 설정한다고 알아두자!
 
 <br>
 
