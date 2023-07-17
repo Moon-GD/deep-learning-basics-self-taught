@@ -16,6 +16,11 @@
 
 <br>
 
+## TIL 📝
+- <a href="https://github.com/Moon-GD/deep-learning-basics-self-taught/tree/main/1장%20:%20해보자!%20딥러닝#chapter-1--해보자-딥러닝">1장 : 해보자! 딥러닝</a> : 2023.07.17
+
+<br>
+
 ---
 
 update : 2023.07.17 (월)
