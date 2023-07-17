@@ -50,8 +50,8 @@ data_set = np.loadtxt('상대 경로', delimiter=',')  # csv 파일인 경우가
 
 <img width="423" alt="샘플 데이터 확인" src="https://github.com/Moon-GD/deep-learning-basics-self-taught/assets/74173976/0269e3c9-0be5-44b4-9723-43435e95756f">
 
-<br><br>
-
+- 빨간색 영역 : attribute
+- 파란색 영역 : class
 - 딥러닝 데이터는 크게 attribute, class로 구분 가능
     - attribute (속성) : 결과 값 도출을 위해 사용될 정보
     - class (클래스) : 대응되는 attribute의 정답
